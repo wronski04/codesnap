@@ -1,4 +1,5 @@
 import { supabase } from "@/lib/supabase"
+import PadEditor from "@/components/PadEditor"
 
 export default async function PadPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -24,7 +25,7 @@ export default async function PadPage({ params }: { params: Promise<{ slug: stri
     <div style={{ padding: "2rem" }}>
       <h1>Pad: {slug}</h1>
       <p>To będzie collaborative editor</p>
-      <p>{pad?.content}</p>
+      <PadEditor content={pad?.content || ''} slug={slug} />
     </div>
   )
 }
