@@ -13,9 +13,11 @@
     "@codemirror/state": "^6.6.0",
     "@codemirror/view": "^6.40.0",
     "@supabase/supabase-js": "^2.95.3",
+    "codemirror": "^6.0.2",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "thememirror": "^2.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
