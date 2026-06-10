@@ -67,7 +67,7 @@ export default function PadEditor({ content, slug }: { content: string, slug: st
             .subscribe()
 
         return () => { supabase.removeChannel(channel) }
-    }, [])
+    }, [slug])
 
     useEffect(() => {
         if (!editorRef.current) return
@@ -103,6 +103,7 @@ export default function PadEditor({ content, slug }: { content: string, slug: st
         })
         viewRef.current = view
         return () => view.destroy()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     function handleLangChange(newLang: LangValue) {
