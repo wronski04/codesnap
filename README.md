@@ -1,6 +1,6 @@
 # CodeSnap
 
-Real-time collaborative code editor. **[Live Demo →](https://codesnap-rose.vercel.app)**
+Real-time collaborative code editor. **[Live Demo →](https://c0desnap.vercel.app)**
 
 ## Features
 
